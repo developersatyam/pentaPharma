@@ -1,5 +1,6 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
+import parse from "html-react-parser"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -11,7 +12,7 @@ import "../utils/css/screen.css"
 const ProductPage = ({ data }) => {
   const meta = data.allMarkdownRemark.edges[0].node
   const siteTitle = data.site.siteMetadata.title
-  console.log(meta)
+
   return (
     <Layout title={siteTitle}>
       <SEO
@@ -31,34 +32,7 @@ const ProductPage = ({ data }) => {
               {meta.frontmatter.title}
             </h3>
           </u>
-          <figure className="kg-card kg-image-card kg-width-full">
-            <Img fluid={data.frontmatter.image} className="kg-image" />
-          </figure>
-          <p content={meta.html} />
-
-          {/* <div>
-            <h4 id="dynamic-styles">Description</h4>
-            <p>{meta.Description}</p>
-          </div>
-
-          <div>
-            <h4 id="dynamic-styles">Features</h4>
-            <p>{meta.Features}</p>
-          </div>
-          <div>
-            <h4 id="dynamic-styles">Composition</h4>
-            <p>{meta.Composition}</p>
-          </div>
-
-          <div>
-            <h4 id="dynamic-styles">Caution</h4>
-            <p>{meta.Caution}</p>
-          </div>
-
-          <div>
-            <h4 id="dynamic-styles">Packs</h4>
-            <p>{meta.Packs}</p>
-          </div> */}
+          <div>{parse(meta.html)}</div>
         </div>
       </article>
     </Layout>
@@ -81,7 +55,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             Category
-            image
           }
         }
       }
