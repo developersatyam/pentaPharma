@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  repo: developersatyam/pentaPharma
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "products"
+    label: "products"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "Category", widget: "string" }
+      - { label: "Description", name: "Description", widget: "string" }
+      - { label: "Features", name: "Features", widget: "markdown" }
+      - { label: "Composition", name: "Composition", widget: "markdown" }
+      - { label: "Caution", name: "Caution", widget: "markdown" }
+      - { label: "Packs", name: "Packs", widget: "string" }
+
+  - name: "announcement"
+    label: "announcement"
+    folder: "content/announcement"
+    create: true
+    slug: "announcement"
+    identifier_field: title
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "Description", widget: "markdown" }
+      - { label: "Publish Date", name: "publishdate", widget: "string" }
+
+  - name: "careers"
+    label: "careers"
+    folder: "content/careers"
+    create: true
+    slug: "careers"
+    identifier_field: title
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "Description", widget: "markdown" }
+      - { label: "Publish Date", name: "publishdate", widget: "string" }
+      - { label: "Deadline", name: "deadline", widget: "string" }
