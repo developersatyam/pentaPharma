@@ -32,7 +32,7 @@ const ProductPage = ({ data }) => {
               {meta.frontmatter.title}
             </h3>
           </u>
-          <div>{parse(meta.html)}</div>
+          <div>{parse(meta.frontmatter.html)}</div>
         </div>
       </article>
     </Layout>
@@ -51,10 +51,10 @@ export const pageQuery = graphql`
     allMarkdownRemark(filter: { frontmatter: { title: { eq: $slug } } }) {
       edges {
         node {
-          html
           frontmatter {
             title
             Category
+            html
           }
         }
       }

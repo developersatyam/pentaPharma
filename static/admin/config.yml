@@ -18,11 +18,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Category", name: "Category", widget: "string" }
-      - { label: "Description", name: "Description", widget: "string" }
-      - { label: "Features", name: "Features", widget: "markdown" }
-      - { label: "Composition", name: "Composition", widget: "markdown" }
-      - { label: "Caution", name: "Caution", widget: "markdown" }
-      - { label: "Packs", name: "Packs", widget: "string" }
+      - { label: "html", name: "html", widget: "markdown" }
 
   - name: "announcement"
     label: "announcement"
