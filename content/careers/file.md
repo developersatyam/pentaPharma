@@ -1,6 +1,6 @@
 ---
-
-title: Aaja bhai
-Description: Job mil jayegi
-publishdate: 17-04-2017
-deadline: 17-05-2017
+title: No Career Update
+Description: (Will mention all the updates here)
+publishdate: N/A
+deadline: N/A
+---

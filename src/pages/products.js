@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, StaticQuery, Link } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -32,7 +31,7 @@ const ProductsPage = ({ data }, location) => {
                   <Link
                     to={`products/${ele.node.frontmatter.title.toLowerCase()}`}
                   >
-                    <li>{ele.node.frontmatter.title}</li>
+                    <li>{ele.node.frontmatter.Name}</li>
                   </Link>
                 )
             })}
@@ -45,7 +44,7 @@ const ProductsPage = ({ data }, location) => {
                   <Link
                     to={`products/${ele.node.frontmatter.title.toLowerCase()}`}
                   >
-                    <li>{ele.node.frontmatter.title}</li>
+                    <li>{ele.node.frontmatter.Name}</li>
                   </Link>
                 )
             })}
@@ -58,7 +57,7 @@ const ProductsPage = ({ data }, location) => {
                   <Link
                     to={`products/${ele.node.frontmatter.title.toLowerCase()}`}
                   >
-                    <li>{ele.node.frontmatter.title}</li>
+                    <li>{ele.node.frontmatter.Name}</li>
                   </Link>
                 )
             })}
@@ -74,7 +73,7 @@ const ProductsPage = ({ data }, location) => {
                   <Link
                     to={`products/${ele.node.frontmatter.title.toLowerCase()}`}
                   >
-                    <li>{ele.node.frontmatter.title}</li>
+                    <li>{ele.node.frontmatter.Name}</li>
                   </Link>
                 )
             })}
@@ -87,7 +86,7 @@ const ProductsPage = ({ data }, location) => {
                   <Link
                     to={`products/${ele.node.frontmatter.title.toLowerCase()}`}
                   >
-                    <li>{ele.node.frontmatter.title}</li>
+                    <li>{ele.node.frontmatter.Name}</li>
                   </Link>
                 )
             })}
@@ -111,6 +110,7 @@ const indexQuery = graphql`
           frontmatter {
             title
             Category
+            Name
           }
         }
       }

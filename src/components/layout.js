@@ -51,7 +51,7 @@ const Layout = props => {
           <nav id="swup" className="site-head-right">
             <ul className="nav" role="menu">
               <li className="nav-home" role="menuitem">
-                <Link to={`/news`}>News</Link>
+                <Link to={`/plant-nutrition`}>Nutrition</Link>
               </li>
               <li className="nav-home" role="menuitem">
                 <Link to={`/careers`}>Careers</Link>
@@ -60,7 +60,12 @@ const Layout = props => {
                 <Link to={`/announcement`}>Notifications</Link>
               </li>
               <li className="nav-home" role="menuitem">
-                <Link to={`/plant-nutrition`}>Nutrition</Link>
+                <a
+                  target="_blank"
+                  href="https://city.imd.gov.in/citywx/localwx.php"
+                >
+                  Weathercast
+                </a>
               </li>
             </ul>
           </nav>
@@ -79,16 +84,18 @@ const Layout = props => {
         aria-hidden="false"
         tabindex="0"
       />
+      <br />
+      <br />
+      <div className="footer-section">
+        <p style={{ color: "black", textAlign: "left" }}>
+          PENTA PHARMA PRIVATE LIMITED. <br /> 79-Govt,Industrial Estate,Rania
+          Kanpur <br />
+          Dehat, UttarPradesh <br /> Tel No : +919451541819 <br />
+          E-mail : anil9839319336@yahoo.com
+        </p>
+      </div>
       <footer className="site-foot">
-        <div className="footer-section">
-          <p style={{ color: "black", textAlign: "left" }}>
-            PENTA PHARMA PRIVATE LIMITED. <br /> 79-Govt,Industrial Estate,Rania
-            Kanpur <br />
-            Dehat, UttarPradesh <br /> Tel No : +919451541819 <br />
-            E-mail : anil9839319336@yahoo.com
-          </p>
-        </div>
-        &copy; {new Date().getFullYear()} {title} &mdash; Website by{" "}
+        Website by{" "}
         <a
           href="https://www.linkedin.com/in/satyam-singh-309a44151/"
           target="_blank"

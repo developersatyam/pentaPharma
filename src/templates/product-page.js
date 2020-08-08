@@ -29,9 +29,15 @@ const ProductPage = ({ data }) => {
         <div className="post-content-body">
           <u>
             <h3 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
-              {meta.frontmatter.title}
+              {meta.frontmatter.Name}
             </h3>
           </u>
+          {/* <figure className="kg-card kg-image-card kg-width-full">
+            <Img
+              src={meta.frontmatter.image.childImageSharp.fixed.src}
+              className="kg-image"
+            />
+          </figure> */}
           <div>{parse(meta.frontmatter.html)}</div>
         </div>
       </article>
@@ -55,6 +61,7 @@ export const pageQuery = graphql`
             title
             Category
             html
+            Name
           }
         }
       }

@@ -1,5 +1,5 @@
 ---
-title: Kal Chutti hai
-Description: Jai Shree Ram
-publishdate: 5-08-2020
+title: No Notifications
+Description: (Will mention all the updates here)
+publishdate: N/A
 ---

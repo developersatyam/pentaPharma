@@ -28,6 +28,16 @@ const AboutPage = ({ data }, location) => {
             />
           </figure>
           <h3 id="dynamic-styles">About Us</h3>
+          <blockquote>
+            PENTA PHARMA PRIVATE LIMITED is in Kanpur Nagar and registered
+            address is 79-Govt. Industrial Estate Ranis, Kanpur (Dehat) Uttar
+            Pradesh INDIA 208011. PENTA PHARMA PRIVATE LIMITED CIN no is
+            <u> U24231UP1991PTC013617</u> and registered on 17/10/91. The
+            Authorized Capital of PENTA PHARMA PRIVATE LIMITED is 1000000 and
+            Paid Up capital is 955000. PENTA PHARMA PRIVATE LIMITED principal
+            business activities are Manufacturing (Metals &amp; Chemicals, and
+            products thereof).
+          </blockquote>
           <p>
             PENTA PHARMA Pvt. Ltd. was founded by Suresh Kumar Sharda and Rajeev
             Kumar Maheshwari in 1991. We are in the business of Manufacturing
