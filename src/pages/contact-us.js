@@ -30,12 +30,15 @@ const ContactUs = ({ data }, location) => {
             />
           </figure>
           <h3>We'll get back to you.</h3>
-          <form method="post" action="MAILTO: satyampaaji@gmail.com">
+          <form
+            method="post"
+            action="https://getform.io/f/487d817a-d1aa-45be-a636-9f9f871cbf54"
+          >
             <div className="row gtr-uniform">
               <div className="col-12 col-12-xsmall">
                 <input
                   type="text"
-                  name="demo-name"
+                  name="name"
                   id="demo-name"
                   placeholder="Name"
                 />
@@ -67,8 +70,8 @@ const ContactUs = ({ data }, location) => {
 
               <div className="col-12">
                 <textarea
-                  name="demo-message"
-                  id="demo-message"
+                  name="message"
+                  id="message"
                   placeholder="Enter your message"
                   rows={6}
                   defaultValue={""}
