@@ -16,7 +16,7 @@ const ProductPage = ({ data }) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title={meta.frontmatter.title}
+        title={meta.frontmatter.Name}
         keywords={[
           `${meta.frontmatter.title}`,
           `gatsby`,
